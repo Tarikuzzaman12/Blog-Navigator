@@ -1,6 +1,6 @@
 import Link from 'next/link';
 // import { useKindeAuth } from '@kinde-oss/kinde-auth-js';
-
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nexts"
 export default function Navbar() {
   // const { isAuthenticated, login, logout } = useKindeAuth();
 
@@ -44,8 +44,8 @@ export default function Navbar() {
 
           {/* Placeholder for now */}
           <div className="flex space-x-4">
-            <button className="bg-blue-500 px-4 py-2 rounded">Sign In</button>
-            <button className="bg-green-500 px-4 py-2 rounded">Sign Up</button>
+            <LoginLink  className="bg-blue-500 px-4 py-2 rounded">Sign In</LoginLink>
+            <RegisterLink className="bg-green-500 px-4 py-2 rounded">Sign Up</RegisterLink>
           </div>
         </div>
       </div>
